@@ -413,7 +413,7 @@
             background-color: white;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
-            overflow: hidden; /* Changed from visible to hidden for consistency */
+            overflow: hidden; 
             transition: var(--transition);
         }
 
@@ -443,9 +443,8 @@
             padding: 1.5rem;
         }
 
-        /* Enhanced Schedule Styles (Used on Dashboard and Class Schedule Page) */
-        .schedule-container { /* Wrapper for schedule content */
-           /* Can be same as .card-body or have its own padding if outside a card */
+        /* Enhanced Schedule Styles */
+        .schedule-container { 
         }
         .schedule-day {
             margin-bottom: 1.5rem;
@@ -482,7 +481,7 @@
         .schedule-item {
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Align items vertically */
+            align-items: center; 
             padding: 1rem;
             margin: 0.5rem 0;
             border-radius: var(--border-radius);
@@ -552,25 +551,25 @@
             align-items: center;
             justify-content: center;
             gap: 5px;
-            flex-shrink: 0; /* Prevent shrinking */
+            flex-shrink: 0; 
         }
 
         /* Announcements */
         .announcement-item {
-            padding: 1rem 0; /* Adjusted padding for list view */
+            padding: 1rem 0; 
             border-bottom: 1px solid #eee;
             transition: var(--transition);
         }
-        .card-body .announcement-item:first-child { /* Remove top padding for first item */
+        .card-body .announcement-item:first-child { 
             padding-top: 0;
         }
-         .card-body .announcement-item:last-child { /* Remove bottom border for last item */
+         .card-body .announcement-item:last-child { 
             border-bottom: none;
             padding-bottom: 0;
         }
 
         .announcement-item:hover {
-            background-color: #f8f9fa; /* Only if interactive, might remove if just display */
+            background-color: #f8f9fa; 
         }
 
         .announcement-title {
@@ -595,10 +594,9 @@
             font-size: 0.95rem;
         }
 
-        /* Removed .progress-bar and .progress-fill as Academic Progress card is removed */
 
         .btn {
-            display: inline-flex; /* For icon alignment */
+            display: inline-flex; 
             padding: 0.6rem 1.5rem;
             background-color: var(--primary);
             color: white;
@@ -611,21 +609,21 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            font-size: 0.9rem; /* Standardize button font size */
+            font-size: 0.9rem; 
         }
-        .btn.btn-sm { /* Smaller button variant */
+        .btn.btn-sm { 
             padding: 0.4rem 0.8rem;
             font-size: 0.8rem;
             gap: 5px;
         }
 
 
-        .btn:hover:not(:disabled) { /* Add :not(:disabled) for hover effect */
+        .btn:hover:not(:disabled) { 
             background-color: #002244;
             transform: translateY(-2px);
         }
         .btn:disabled, .btn.disabled {
-            background-color: #a0a0a0 !important; /* More prominent disabled state */
+            background-color: #a0a0a0 !important; 
             border-color: #a0a0a0 !important;
             color: #ccc !important;
             cursor: not-allowed;
@@ -662,7 +660,7 @@
 
         .action-buttons {
             display: flex;
-            gap: 10px; /* Reduced gap for more compact layout */
+            gap: 10px; 
             margin-top: 1.5rem;
             flex-wrap: wrap;
         }
@@ -674,21 +672,21 @@
             font-size: 0.85rem;
             font-weight: 500;
         }
-        .status-badge.status-item { /* For application status card */
+        .status-badge.status-item { 
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
             margin-bottom: 0.5rem;
             padding: 0.5rem 0;
-            border-bottom: 1px solid #eee; /* Add separator */
+            border-bottom: 1px solid #eee; 
         }
          .status-badge.status-item:last-child {
-            border-bottom: none; /* Remove border for last item */
+            border-bottom: none; 
         }
         .status-badge.status-item span:first-child {
             color: var(--dark);
-            flex-grow: 1; /* Allow text to take space */
+            flex-grow: 1; 
         }
 
 
@@ -739,10 +737,10 @@
         }
 
         th, td {
-            padding: 0.8rem 1rem; /* Adjusted padding */
+            padding: 0.8rem 1rem; 
             text-align: left;
             border-bottom: 1px solid #eee;
-            font-size: 0.9rem; /* Consistent table font size */
+            font-size: 0.9rem; 
         }
 
         th {
@@ -752,7 +750,7 @@
         }
 
         tr:hover {
-            background-color: #f1f5f9; /* Slightly different hover */
+            background-color: #f1f5f9; 
         }
 
         /* Form Styles */
@@ -764,7 +762,7 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
-            font-size: 0.9rem; /* Label font size */
+            font-size: 0.9rem; 
         }
 
         .form-control {
@@ -772,7 +770,7 @@
             padding: 0.8rem;
             border: 1px solid #ddd;
             border-radius: var(--border-radius);
-            font-size: 0.95rem; /* Input font size */
+            font-size: 0.95rem; 
             transition: var(--transition);
         }
         .form-control[readonly] {
@@ -792,7 +790,7 @@
             gap: 20px;
             margin-bottom: 1.5rem;
         }
-        .form-row:last-child { /* Original had this */
+        .form-row:last-child { 
             margin-bottom: 0;
         }
 
@@ -871,7 +869,7 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }
-        .financial-breakdown { /* Original had this */
+        .financial-breakdown { 
             margin-top: 1.5rem;
         }
         .financial-breakdown h4 {
@@ -1002,7 +1000,7 @@
             width: 60px;
             height: 60px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            display: flex; /* Was previously none, then flex. Kept as flex. */
+            display: flex; 
             align-items: center;
             justify-content: center;
             cursor: pointer;
@@ -1036,7 +1034,7 @@
             border-radius: var(--border-radius);
             display: none;
         }
-        .assessment-breakdown h4 { /* Original had this */
+        .assessment-breakdown h4 { 
             color: var(--primary);
             margin-bottom: 1rem;
         }
@@ -1053,7 +1051,7 @@
             border-radius: var(--border-radius);
             margin-bottom: 1.5rem;
         }
-        .financial-summary h3 { /* Original had this */
+        .financial-summary h3 { 
             color: var(--primary);
             margin-bottom: 1rem;
         }
@@ -1072,8 +1070,6 @@
             font-size: 1.1rem;
         }
 
-        /* Weekly Schedule - styles already present */
-
         /* Change Request Form */
         .change-form {
             background-color: #f8f9fa;
@@ -1082,7 +1078,7 @@
             margin-top: 1.5rem;
             display: none;
         }
-        .change-form h3 { /* Original had this */
+        .change-form h3 { 
             color: var(--primary);
             margin-bottom: 1.5rem;
         }
@@ -1200,7 +1196,7 @@
         .modal-body {
             padding: 1.5rem;
         }
-        .modal-body h4 { /* Common heading style for tabs */
+        .modal-body h4 { 
             color: var(--primary);
             margin-bottom: 1rem;
             font-size: 1.2rem;
@@ -1218,7 +1214,7 @@
         }
 
         .modal-tab {
-            padding: 0.8rem 1.2rem; /* Adjusted padding */
+            padding: 0.8rem 1.2rem; 
             background: none;
             border: none;
             cursor: pointer;
@@ -1226,8 +1222,8 @@
             color: #666;
             transition: var(--transition);
             border-bottom: 3px solid transparent;
-            font-size: 0.85rem; /* Adjusted font size for more tabs */
-            display: flex; /* For icon alignment */
+            font-size: 0.85rem; 
+            display: flex; 
             align-items: center;
             gap: 6px;
         }
@@ -1249,13 +1245,13 @@
             display: block;
         }
 
-        .faculty-info { /* Original structure */
+        .faculty-info { 
             display: flex;
             gap: 20px;
             margin-bottom: 1.5rem;
         }
 
-        .faculty-avatar { /* Original structure */
+        .faculty-avatar { 
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -1275,18 +1271,18 @@
         }
 
 
-        .faculty-details { /* Original structure */
+        .faculty-details { 
             flex: 1;
         }
         .faculty-details h4 { margin-bottom: 0.5rem; color: var(--dark);}
         .faculty-details p { font-size: 0.9rem; margin-bottom: 0.3rem; color: #555;}
 
 
-        .consulting-schedule { /* Original structure */
+        .consulting-schedule { 
             margin-top: 1.5rem;
         }
 
-        .consulting-item { /* Original structure */
+        .consulting-item { 
             display: flex;
             justify-content: space-between;
             padding: 1rem;
@@ -1295,7 +1291,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* For new Note and Assignment items */
         .note-item, .assignment-item { 
             padding: 1rem;
             border-bottom: 1px solid #eee;
@@ -1341,40 +1336,39 @@
         .upload-area p { font-size: 0.9rem; color: #777; margin-bottom: 0.5rem;}
         .upload-area input[type="file"] {
             margin-bottom: 0.5rem;
-            display: block; /* Make it block for better centering/layout */
+            display: block; 
             margin-left: auto;
             margin-right: auto;
             max-width: 300px;
         }
 
 
-        /* Original Notice item styles (ensure they are distinct if needed) */
-        .notice-item { /* This was in the original modal */
+        .notice-item { 
             padding: 1rem;
             border-bottom: 1px solid #eee;
         }
         .notice-item:last-child {
             border-bottom: none;
         }
-        .notice-title { /* This was in the original modal */
+        .notice-title { 
             font-weight: bold;
             margin-bottom: 0.25rem;
             display: flex;
             align-items: center;
             gap: 8px;
         }
-        .notice-date { /* This was in the original modal */
+        .notice-date { 
             color: #666;
             font-size: 0.85rem;
             margin-bottom: 0.5rem;
         }
 
         /* Curriculum Section */
-        #curriculum .page-title { /* More specific styling for curriculum page title */
+        #curriculum .page-title { 
             border-bottom-color: var(--secondary);
         }
         .curriculum-semester {
-            margin-bottom: 2.5rem; /* Increased spacing */
+            margin-bottom: 2.5rem; 
             padding: 1.5rem;
             background-color: #fff;
             border-radius: var(--border-radius);
@@ -1382,35 +1376,33 @@
             border-left: 5px solid var(--secondary);
         }
         .curriculum-semester:last-child {
-            border-bottom: none; /* Already handled by individual cards */
             margin-bottom: 0;
         }
         .curriculum-semester h3 {
-            color: var(--primary); /* Changed to primary */
-            font-size: 1.6rem; /* Slightly larger */
-            margin-bottom: 1.5rem; /* Increased margin */
+            color: var(--primary); 
+            font-size: 1.6rem; 
+            margin-bottom: 1.5rem; 
             display: flex;
             align-items: center;
-            gap: 12px; /* Increased gap */
+            gap: 12px; 
             padding-bottom: 0.75rem;
             border-bottom: 2px solid #f0f2f5;
         }
         .curriculum-courses {
             list-style: none;
             padding-left: 0;
-            display: grid; /* Use grid for better alignment */
+            display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1rem;
         }
         .curriculum-courses li {
             background-color: #f8f9fa;
-            padding: 1rem 1.25rem; /* Increased padding */
+            padding: 1rem 1.25rem; 
             border-radius: var(--border-radius);
-            /* margin-bottom: 0.75rem; */ /* Handled by grid gap */
             display: flex;
-            flex-direction: column; /* Stack content vertically */
+            flex-direction: column; 
             justify-content: space-between;
-            align-items: flex-start; /* Align to start */
+            align-items: flex-start; 
             transition: var(--transition);
             font-size: 0.95rem;
             border: 1px solid #e9ecef;
@@ -1421,22 +1413,22 @@
             box-shadow: 0 3px 6px rgba(0,0,0,0.08);
         }
         .curriculum-courses .course-code-title {
-            font-weight: 600; /* Bolder course code/title */
+            font-weight: 600; 
             color: var(--primary);
             font-size: 1rem;
-            margin-bottom: 0.5rem; /* Space between title and credits */
+            margin-bottom: 0.5rem; 
         }
         .curriculum-courses .course-code-title i {
             margin-right: 8px;
             color: var(--secondary);
         }
         .curriculum-courses .course-credits {
-            color: #fff; /* White text for badge */
+            color: #fff; 
             font-size: 0.85rem;
-            background-color: var(--accent); /* Use accent for credits badge */
-            padding: 4px 10px; /* Adjusted padding */
-            border-radius: 15px; /* More rounded badge */
-            align-self: flex-end; /* Push credits to the right */
+            background-color: var(--accent); 
+            padding: 4px 10px; 
+            border-radius: 15px; 
+            align-self: flex-end; 
             margin-top: 0.5rem;
         }
 
@@ -1456,7 +1448,7 @@
             color: #666;
             transition: var(--transition);
             border-bottom: 3px solid transparent;
-            font-size: 1rem; /* Make tabs more prominent */
+            font-size: 1rem; 
         }
         .exam-tab.active {
             color: var(--primary);
@@ -1471,14 +1463,14 @@
         .exam-content.active {
             display: block;
         }
-        .exam-content h3 { /* Heading for each exam type list */
+        .exam-content h3 { 
             font-size: 1.3rem;
             color: var(--secondary);
             margin-bottom: 1rem;
         }
         .exam-item {
             background-color: var(--light);
-            padding: 1rem 1.5rem; /* More padding */
+            padding: 1rem 1.5rem; 
             border-radius: var(--border-radius);
             margin-bottom: 1rem;
             border-left: 4px solid var(--accent);
@@ -1491,7 +1483,7 @@
         }
         .exam-item p {
             font-size: 0.95rem;
-            margin-bottom: 0.35rem; /* Adjusted spacing */
+            margin-bottom: 0.35rem; 
             color: #555;
             display: flex;
             align-items: center;
@@ -1499,23 +1491,39 @@
         .exam-item p i {
             margin-right: 8px;
             color: var(--secondary);
-            width: 16px; /* Ensure icon alignment */
+            width: 16px; 
             text-align: center;
         }
 
 
         /* Registration Schedule Section */
-        .search-container { /* Wrapper for search */
+         #selected-courses-for-registration-container .registration-course-card {
+            border-left-color: var(--accent); /* Different border for selected pending items */
+            background-color: #f0f8ff; /* AliceBlue or similar light blue */
+        }
+        #selected-courses-for-registration-container .registration-course-card h4 {
+            font-size: 1.05rem;
+        }
+        #selected-courses-for-registration-container .registration-course-card p {
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+        #selected-courses-for-registration-container .registration-course-card .btn {
+            align-self: flex-end; /* Push remove button to the right for selected cards */
+        }
+
+
+        .search-container { 
             margin-bottom: 1.5rem;
             display: flex;
             gap: 10px;
-            align-items: center;
+            align-items: center; 
         }
-        #program-course-search-input, #section-search-input { /* Common styling for search inputs */
-            padding: 0.8rem 1rem; /* More padding */
+        #program-course-search-input, #section-search-input { 
+            padding: 0.8rem 1rem; 
             border: 1px solid #ddd;
             border-radius: var(--border-radius);
-            flex-grow: 1; /* Take available space */
+            flex-grow: 1; 
             font-size: 1rem;
         }
         #program-course-search-input:focus, #section-search-input:focus {
@@ -1523,23 +1531,28 @@
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
             outline: none;
         }
+        #final-confirm-registration-btn { 
+            flex-shrink: 0; 
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
-        /* For initial course list in registration */
+
         .program-course-list-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* auto-fill for responsiveness */
-            gap: 1.5rem; /* Increased gap */
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 1.5rem; 
             margin-bottom: 2rem;
         }
         .program-course-item {
-            background-color: #fff; /* White background */
-            padding: 1.25rem; /* More padding */
+            background-color: #fff; 
+            padding: 1.25rem; 
             border-radius: var(--border-radius);
             cursor: pointer;
             transition: var(--transition);
-            border: 1px solid #e0e0e0; /* Lighter border */
-            text-align: left; /* Align text left */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+            border: 1px solid #e0e0e0; 
+            text-align: left; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
         }
         .program-course-item:hover {
             border-color: var(--primary);
@@ -1547,9 +1560,9 @@
             box-shadow: 0 5px 10px rgba(0,51,102,0.1);
         }
         .program-course-item h5 {
-            margin-bottom: 0.5rem; /* Space between title and credits */
+            margin-bottom: 0.5rem; 
             color: var(--primary);
-            font-size: 1.1rem; /* Slightly larger title */
+            font-size: 1.1rem; 
             font-weight: 600;
             display: flex;
             align-items: center;
@@ -1559,16 +1572,16 @@
             color: var(--secondary);
         }
         .program-course-item p {
-            font-size: 0.9rem; /* Larger credits text */
+            font-size: 0.9rem; 
             color: #555;
             background-color: var(--primary-light);
             padding: 3px 8px;
             border-radius: 12px;
-            display: inline-block; /* So padding applies correctly */
+            display: inline-block; 
         }
 
 
-        #offered-sections-container h3 { /* Heading for offered sections */
+        #offered-sections-container h3 { 
             font-size: 1.4rem;
             color: var(--secondary);
             margin-bottom: 1rem;
@@ -1576,17 +1589,11 @@
         .back-to-courses-btn {
             margin-bottom: 1.5rem;
         }
-        #confirm-registration-container {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #eee;
-            text-align: right;
-        }
 
 
         .registration-course-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger minmax */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
             gap: 20px;
         }
         .registration-course-card {
@@ -1596,10 +1603,10 @@
             padding: 1.5rem;
             transition: var(--transition);
             border-left: 4px solid var(--primary);
-            display: flex; /* For better internal layout */
+            display: flex; 
             flex-direction: column;
         }
-        .registration-course-card.conflict { /* Style for conflicted course */
+        .registration-course-card.conflict { 
             border-left-color: var(--danger);
             background-color: #fff2f2;
         }
@@ -1612,7 +1619,7 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.1);
         }
         .registration-course-card h4 {
-            font-size: 1.15rem; /* Slightly larger */
+            font-size: 1.15rem; 
             color: var(--primary);
             margin-bottom: 0.75rem;
         }
@@ -1622,7 +1629,7 @@
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
-            gap: 8px; /* Increased gap */
+            gap: 8px; 
         }
         .registration-course-card p i {
             color: var(--secondary);
@@ -1634,13 +1641,13 @@
             color: var(--accent);
         }
         .registration-course-card .btn {
-            margin-top: auto; /* Push button to bottom if card height varies */
+            margin-top: auto; 
             padding: 0.5rem 1rem;
             font-size: 0.9rem;
-            align-self: flex-start; /* Align button to the start of flex container */
+            align-self: flex-start; 
         }
         .no-results {
-            grid-column: 1 / -1; /* Span full width if grid */
+            grid-column: 1 / -1; 
             text-align: center;
             padding: 2rem;
             font-size: 1.1rem;
@@ -1666,8 +1673,8 @@
             text-align: center;
             transition: var(--transition);
             border-top: 4px solid var(--primary);
-            text-decoration: none; /* Remove underline from card if it's an anchor */
-            color: inherit; /* Inherit text color */
+            text-decoration: none; 
+            color: inherit; 
         }
         .application-card:hover {
             transform: translateY(-5px);
@@ -1695,10 +1702,10 @@
             font-size: 0.9rem;
             color: #666;
             margin-bottom: 1rem;
-            flex-grow: 1; /* Make description take space if card heights vary */
+            flex-grow: 1; 
         }
         .application-card .btn {
-            margin-top: auto; /* Push button to bottom */
+            margin-top: auto; 
         }
 
         /* Drop Course Application Page Styles */
@@ -1727,7 +1734,7 @@
             --calendar-header-text: white;
             --calendar-day-text: #555;
             --calendar-day-hover-bg: #f0f0f0;
-            --calendar-today-bg: #fff9e6; /* Lighter yellow for today */
+            --calendar-today-bg: #fff9e6; 
             --calendar-today-border: var(--secondary);
             --calendar-event-bg: var(--accent);
             --calendar-event-text: white;
@@ -1746,28 +1753,28 @@
             background: var(--primary);
             border: none;
             color: white;
-            padding: 0.6rem 1.2rem; /* Increased padding */
+            padding: 0.6rem 1.2rem; 
             border-radius: var(--border-radius);
             cursor: pointer;
             transition: var(--transition);
             font-weight: 500;
         }
         .calendar-controls button:hover {
-            background-color: #002244; /* Darker primary on hover */
+            background-color: #002244; 
         }
         #month-year-display {
-            font-size: 1.6rem; /* Larger font */
+            font-size: 1.6rem; 
             font-weight: bold;
             color: var(--primary);
         }
         .calendar-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            gap: 1px; /* Creates thin grid lines */
+            gap: 1px; 
             background-color: var(--calendar-border);
             border: 1px solid var(--calendar-border);
             border-radius: var(--border-radius);
-            overflow: hidden; /* For border radius on cells */
+            overflow: hidden; 
             box-shadow: 0 3px 8px rgba(0,0,0,0.08);
         }
         .calendar-header-cell, .calendar-day-cell {
@@ -1780,10 +1787,10 @@
             color: var(--calendar-header-text);
             font-weight: bold;
             font-size: 0.9rem;
-            padding: 0.8rem 0.5rem; /* More padding */
+            padding: 0.8rem 0.5rem; 
         }
         .calendar-day-cell {
-            min-height: 120px; /* Increased min height */
+            min-height: 120px; 
             position: relative;
             cursor: default;
             font-size: 0.9rem;
@@ -1791,7 +1798,7 @@
             display: flex;
             flex-direction: column; 
             align-items: flex-start; 
-            padding: 0.5rem; /* Padding inside cell */
+            padding: 0.5rem; 
         }
         .calendar-day-cell:hover:not(.empty-day) {
             background-color: var(--calendar-day-hover-bg);
@@ -1802,14 +1809,13 @@
         }
         .calendar-day-cell .day-number {
             font-weight: bold;
-            margin-bottom: 0.35rem; /* More space */
-            align-self: flex-end; /* Push day number to top-right */
+            margin-bottom: 0.35rem; 
+            align-self: flex-end; 
             padding: 2px 4px;
             font-size: 0.85rem;
         }
         .calendar-day-cell.today {
             background-color: var(--calendar-today-bg);
-            /* border: 2px solid var(--calendar-today-border); */ /* Can be too harsh, use background */
         }
         .calendar-day-cell.today .day-number {
             background-color: var(--secondary);
@@ -1822,16 +1828,16 @@
             justify-content: center;
         }
         .calendar-event {
-            font-size: 0.78rem; /* Slightly larger event text */
-            padding: 3px 6px; /* More padding */
+            font-size: 0.78rem; 
+            padding: 3px 6px; 
             background-color: var(--calendar-event-bg);
             color: var(--calendar-event-text);
             border-radius: 4px;
-            margin-top: 4px; /* More space between events */
+            margin-top: 4px; 
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            width: calc(100% - 4px); /* Adjust width for padding */
+            width: calc(100% - 4px); 
             cursor: pointer;
             transition: background-color 0.2s ease;
             display: flex;
@@ -1842,16 +1848,16 @@
             opacity: 0.85;
         }
         .calendar-event i {
-            font-size: 0.7rem; /* Smaller icon */
+            font-size: 0.7rem; 
         }
         .calendar-event.holiday { background-color: var(--success); }
         .calendar-event.exam { background-color: var(--danger); }
         .calendar-event.deadline { background-color: var(--warning); color: var(--dark); }
         .calendar-event.registration { background-color: var(--accent); }
-        .calendar-event.other { background-color: #6c757d; } /* Grey for other events */
+        .calendar-event.other { background-color: #6c757d; } 
 
 
-        .event-tooltip { /* Simple tooltip for event details */
+        .event-tooltip { 
             display: none;
             position: absolute;
             background-color: var(--dark);
@@ -1861,7 +1867,7 @@
             z-index: 10;
             font-size: 0.8rem;
             box-shadow: var(--shadow);
-            bottom: 105%; /* Position above the event */
+            bottom: 105%; 
             left: 50%;
             transform: translateX(-50%);
             white-space: normal;
@@ -1919,8 +1925,6 @@
                 justify-content: center;
             }
             
-            /* .nav-menu { display: none; } */ /* Kept from before, review if needed for hamburger */
-            
             .modal-content {
                 width: 90%;
                 margin: 2rem auto; 
@@ -1943,13 +1947,13 @@
                 padding: 1rem; 
             }
             .logo-container {
-                margin-bottom: 0.5rem; /* Space below logo when stacked */
+                margin-bottom: 0.5rem; 
             }
             .nav-container {
                 width: 100%;
-                justify-content: space-between; /* Space out nav menu (if visible) and user controls */
+                justify-content: space-between; 
             }
-            .nav-menu { /* Example: show it as a row if you decide to make it visible on tablet */
+            .nav-menu { 
                 display: flex;
                 gap: 5px;
                 justify-content: center;
@@ -1959,9 +1963,6 @@
             .nav-menu li a {
                 padding: 6px 10px;
                 font-size: 0.9rem;
-            }
-            .user-controls {
-                /* Already part of nav-container which is full width */
             }
             
             .action-buttons {
@@ -1993,28 +1994,30 @@
                 text-align: center;
             }
             .modal-tabs {
-                justify-content: flex-start; /* Align tabs to start */
+                justify-content: flex-start; 
             }
             .modal-tab {
-                flex-grow: 1; /* Make tabs take equal space if they wrap */
+                flex-grow: 1; 
                 text-align: center;
             }
             .registration-course-list {
-                grid-template-columns: 1fr; /* Stack registration cards */
+                grid-template-columns: 1fr; 
             }
              .curriculum-courses {
-                grid-template-columns: 1fr; /* Stack curriculum courses */
+                grid-template-columns: 1fr; 
             }
              .calendar-day-cell { min-height: 60px; padding: 0.5rem 0.25rem; }
-            .calendar-event { display: none; } /* Hide events on very small screens, show only day number */
-            .calendar-day-cell.today .day-number::after { content: '•'; color: var(--calendar-event-bg); margin-left: 2px; } /* Dot for today if event hidden */
+            .calendar-event { display: none; } 
+            .calendar-day-cell.today .day-number::after { content: '•'; color: var(--calendar-event-bg); margin-left: 2px; } 
             .calendar-header-cell { font-size: 0.8rem; padding: 0.5rem 0.2rem;}
             .calendar-controls { flex-direction: column; gap: 0.5rem; }
+            .search-container { flex-wrap: wrap; }
+            #final-confirm-registration-btn { width: 100%; margin-top: 0.5rem; } 
         }
 
         @media (max-width: 576px) {
             body {
-                font-size: 14px; /* Base font size for small screens */
+                font-size: 14px; 
             }
             .header-container {
                 padding: 0.75rem;
@@ -2023,7 +2026,7 @@
             .university-name { font-size: 1rem; }
             .user-controls { gap: 10px; }
             .notification-icon, .user-profile { width: 35px; height: 35px;}
-            .notification-dropdown { width: calc(100vw - 40px); right: -10px; /* Adjust to fit */ }
+            .notification-dropdown { width: calc(100vw - 40px); right: -10px; }
 
 
             .page-container { padding: 0 1rem; margin-top: 1rem; }
@@ -2043,7 +2046,7 @@
             .credit-item {
                 border-right: none;
                 border-bottom: 1px solid #ddd;
-                padding: 0.75rem; /* Reduced padding */
+                padding: 0.75rem; 
                 width: 100%;
             }
             .credit-item:last-child {
@@ -2054,7 +2057,7 @@
                 font-size: 1.2rem;
             }
             .modal-tab {
-                padding: 0.6rem 0.8rem; /* Smaller tabs */
+                padding: 0.6rem 0.8rem; 
                 font-size: 0.8rem;
             }
             .financial-details, .result-details {
@@ -2063,6 +2066,7 @@
             th, td { padding: 0.6rem; font-size: 0.85rem; }
             .btn { padding: 0.5rem 1rem; font-size: 0.85rem; }
             .search-container { flex-direction: column; }
+            #final-confirm-registration-btn { width: auto; margin-top: 0; } 
             .application-cards-container { grid-template-columns: 1fr; }
         }
     </style>
@@ -2296,8 +2300,6 @@
                     </select>
                 </div>
                 <div id="financial-statements-content-area">
-                    <!-- Placeholder for dynamically loaded finance details -->
-                    <!-- Below is static example, will be replaced or controlled by JS if more dynamic behavior is needed for this page -->
                      <div class="semester-content" id="spring2024-finance"> <div class="financial-card"><div class="financial-header"><div class="financial-title">Spring 2023-2024</div><div class="financial-status paid">Paid</div></div><div class="financial-details">
                         <div class="financial-item"><span class="financial-label">Total Amount</span><span class="financial-value">৳ 125,000</span></div><div class="financial-item"><span class="financial-label">Amount Paid</span><span class="financial-value">৳ 125,000</span></div>
                         <div class="financial-item"><span class="financial-label">Due Date</span><span class="financial-value">February 15, 2024</span></div><div class="financial-item"><span class="financial-label">Payment Date</span><span class="financial-value">February 10, 2024</span></div>
@@ -2318,7 +2320,6 @@
                             <tr><td>Feb 10, 2024</td><td>Spring 2023-2024</td><td>৳ 125,000</td><td>Online Banking</td><td>TXN-2024-12548</td><td><span class="status-badge status-approved">Completed</span></td></tr>
                         </tbody></table></div></div></div>
                      <div class="semester-content" id="fall2023-finance" style="display:none;"> <p class="no-results">Financial details for Fall 2022-2023 are not shown in this mock.</p> </div>
-
                 </div>
             </section>
 
@@ -2340,13 +2341,11 @@
             <!-- Applications Page (Enhanced) -->
             <section id="applications-page" class="page-content" style="display: none;">
                 <h2 class="page-title"><i class="fas fa-clipboard-list"></i> Applications Hub</h2>
-                 <!-- Application Status Card MOVED HERE -->
                  <div class="card" style="margin-bottom: 2rem;">
                     <div class="card-header">
                         <h2><i class="fas fa-tasks"></i> Application Status</h2>
                     </div>
                     <div class="card-body" id="application-status-card-content">
-                        <!-- Status items will be dynamically added here by JS -->
                         <p class="no-results dynamic-status" style="display:none;">No active applications or recent statuses.</p>
                     </div>
                 </div>
@@ -2372,7 +2371,6 @@
                 <div id="current-semester-courses-for-drop">
                     <h3>Your Registered Courses for <span id="drop-app-current-semester-name">Spring 2023-2024</span>:</h3>
                     <div id="drop-course-list" class="table-container" style="margin-top:1rem;">
-                        <!-- JS will populate this -->
                         <p class="no-results">You have no courses registered for the current semester to drop.</p>
                     </div>
                 </div>
@@ -2380,7 +2378,6 @@
                 <div id="drop-request-history">
                     <h3><i class="fas fa-history"></i> Drop Request History</h3>
                     <div id="drop-history-table-container" class="table-container" style="margin-top:1rem;">
-                        <!-- JS will populate this -->
                         <p class="no-results">No drop request history found.</p>
                     </div>
                 </div>
@@ -2392,7 +2389,6 @@
                 <h2 class="page-title"><i class="fas fa-sitemap"></i> Curriculum - BSc in CS&E</h2>
                 <div class="curriculum-semester"><h3><i class="fas fa-layer-group"></i> Semester 1: Foundation</h3><ul class="curriculum-courses"><li><div class="course-code-title"><i class="fas fa-atom"></i> PHY 1101 - Physics I</div> <span class="course-credits">3 Credits</span></li><li><div class="course-code-title"><i class="fas fa-flask"></i> PHY 1102 - Physics I Lab</div> <span class="course-credits">1 Credit</span></li><li><div class="course-code-title"><i class="fas fa-calculator"></i> MAT 1102 - Differential Calculus & Co-ordinate Geometry</div> <span class="course-credits">3 Credits</span></li><li><div class="course-code-title"><i class="fas fa-comments"></i> ENG 1101 - English Reading Skills & Public Speaking</div> <span class="course-credits">3 Credits</span></li><li><div class="course-code-title"><i class="fas fa-desktop"></i> CSC 1101 - Introduction to Computer Studies</div> <span class="course-credits">1 Credit</span></li></ul></div>
                 <div class="curriculum-semester"><h3><i class="fas fa-layer-group"></i> Semester 2: Programming Fundamentals</h3><ul class="curriculum-courses"><li><div class="course-code-title"><i class="fas fa-code"></i> CSC 1203 - Programming Language I (Structured)</div> <span class="course-credits">3 Credits</span></li><li><div class="course-code-title"><i class="fas fa-laptop-code"></i> CSC 1204 - Programming Language I Lab</div> <span class="course-credits">1 Credit</span></li><li><div class="course-code-title"><i class="fas fa-infinity"></i> MAT 1205 - Integral Calculus & ODE</div> <span class="course-credits">3 Credits</span></li><li><div class="course-code-title"><i class="fas fa-pen-alt"></i> ENG 1202 - English Writing Skills & Communication</div> <span class="course-credits">3 Credits</span></li><li><div class="course-code-title"><i class="fas fa-bolt"></i> EEE 1208 - Electrical Circuits Analysis Lab</div> <span class="course-credits">1 Credit</span></li></ul></div>
-                <!-- Add more semesters as needed -->
             </section>
 
             <!-- Exam Schedule Page (More Content) -->
@@ -2440,12 +2436,28 @@
             </section>
 
 
-            <!-- Registration Schedule Page (Enhanced for Program Courses -> Sections) -->
+            <!-- Registration Schedule Page -->
             <section id="registration-schedule" class="page-content" style="display: none;">
+                <h2 class="page-title"><i class="fas fa-edit"></i> Course Registration</h2>
+
+                <!-- Selected Courses for Registration Area -->
+                <div id="selected-courses-for-registration-container" style="margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">
+                        <i class="fas fa-shopping-cart"></i> Your Selected Courses (Pending Confirmation)
+                    </h3>
+                    <div id="selected-courses-list" class="registration-course-list">
+                        <p class="no-results">No courses selected yet. Add courses from the list below.</p>
+                    </div>
+                    <div style="text-align: right; margin-top: 1.5rem;" id="final-confirm-button-container">
+                        <!-- Confirm button will be dynamically shown/hidden here by JS -->
+                    </div>
+                </div>
+                <hr style="margin: 0 0 2rem 0;">
+
+
                 <div id="registration-main-view">
-                    <h2 class="page-title"><i class="fas fa-edit"></i> Course Registration</h2>
                     <div class="search-container">
-                        <input type="text" id="program-course-search-input" placeholder="Search your program courses (e.g., CSE3205)...">
+                        <input type="text" id="program-course-search-input" placeholder="Search available program courses (e.g., CSE3205)...">
                     </div>
                     <h3 style="color: var(--primary); margin-bottom: 1rem;">Select a Course to View Offered Sections:</h3>
                     <div class="program-course-list-container" id="program-courses-list">
@@ -2454,17 +2466,14 @@
                 </div>
 
                 <div id="offered-sections-view" style="display: none;">
-                     <button class="btn btn-outline back-to-courses-btn" id="back-to-all-courses-btn"><i class="fas fa-arrow-left"></i> Back to All Courses</button>
+                     <button class="btn btn-outline back-to-courses-btn" id="back-to-all-courses-btn"><i class="fas fa-arrow-left"></i> Back to All Available Courses</button>
                     <h3 id="offered-sections-title">Offered Sections</h3>
-                     <div class="search-container"> <!-- Search within offered sections -->
+                     <div class="search-container">
                         <input type="text" id="section-search-input" placeholder="Filter sections by faculty, time, room...">
                     </div>
                     <div class="registration-course-list" id="registration-course-list-container">
                         <p class="no-results" style="display:none;">No sections found for this course or your filter.</p>
                         <!-- Offered section cards will be dynamically inserted here -->
-                    </div>
-                    <div id="confirm-registration-container">
-                        <button class="btn btn-success" id="confirm-registration-btn"><i class="fas fa-check-circle"></i> Confirm Registration & Update Portal</button>
                     </div>
                 </div>
             </section>
@@ -2472,7 +2481,7 @@
         </div>
     </div>
 
-    <!-- Course Details Modal (Original structure + new tabs) -->
+    <!-- Course Details Modal -->
     <div class="modal" id="course-modal">
         <div class="modal-content">
             <div class="modal-header"><h3 class="modal-title"><i class="fas fa-book-reader"></i> <span id="course-modal-title-text">Course Details</span></h3><button class="close-modal">&times;</button></div>
@@ -2523,16 +2532,14 @@
             };
 
             let studentRegisteredCourses = [
-                // Pre-registered courses for the current semester
                 { semester: "spring2024", courseCode: "CSE3205", title: "Software Engineering", credit: 3.0, section: "A", time: "TTh 10:00-11:30", room: "D-502", faculty: "Dr. Rahman", grade: "IP", gradePoint: null },
                 { semester: "spring2024", courseCode: "CSE3107", title: "Database Systems", credit: 3.0, section: "B", time: "ST 12:00-01:30", room: "C-303", faculty: "Prof. Khan", grade: "IP", gradePoint: null },
                 { semester: "spring2024", courseCode: "MAT3109", title: "Numerical Methods", credit: 3.0, section: "C", time: "M 09:00-10:30", room: "B-102", faculty: "Dr. Hasan", grade: "IP", gradePoint: null },
-                
-                // Past semester data
                 { semester: "fall2023", courseCode: "CSE2201", title: "Object Oriented Programming", credit: 3.0, section: "B", time: "MW 08:30-10:00", room: "C-401", faculty: "Dr. Akhtar", grade: "A+", gradePoint: 4.00 },
                 { semester: "fall2023", courseCode: "EEE2104", title: "Electronic Devices", credit: 3.0, section: "A", time: "ST 10:00-11:30", room: "E-301", faculty: "Prof. Barua", grade: "A-", gradePoint: 3.75 },
             ];
             let courseDropRequests = []; 
+            let tempSelectedCourses = []; // NEW: For courses selected before confirmation
             
             const allPages = document.querySelectorAll('.page-content, #dashboard');
             const navLinks = document.querySelectorAll('.nav-menu a, .sidebar-menu a, .user-profile a, .application-card.data-nav-link, .action-buttons a.btn.data-nav-link');
@@ -2548,7 +2555,6 @@
                 
                 if (targetPage) {
                     targetPage.style.display = 'block';
-                    // Trigger appropriate render/load functions when a page is shown
                     if (pageIdToShow === '#registered-courses' && document.getElementById('registered-courses-semester-filter')) {
                         renderRegisteredCoursesTable(document.getElementById('registered-courses-semester-filter').value);
                     } else if (pageIdToShow === '#academic-results' && document.getElementById('results-semester-filter')) {
@@ -2562,11 +2568,12 @@
                     } else if (pageIdToShow === '#academic-calendar-page') {
                         generateCalendar(currentCalendarDate.getFullYear(), currentCalendarDate.getMonth());
                     } else if (pageIdToShow === '#registration-schedule') {
+                        renderSelectedCoursesForRegistration(); // Render initially empty or with temp items
                         displayProgramCourses();
                         if (offeredSectionsView) offeredSectionsView.style.display = 'none';
                         if (registrationMainView) registrationMainView.style.display = 'block';
                     } else if (pageIdToShow === '#dashboard') {
-                        loadDashboardData(); // Central function to refresh dashboard components
+                        loadDashboardData(); 
                     }
                 } else if (pageIdToShow === '#dashboard' || pageIdToShow === '#') {
                     document.getElementById('dashboard').style.display = 'block';
@@ -2598,7 +2605,7 @@
                         if (targetId === '#') targetId = '#dashboard';
                         showPage(targetId);
                         setActiveLink(targetId);
-                        window.location.hash = targetId; // Update hash for bookmarking/refresh
+                        window.location.hash = targetId; 
                     }
                 });
             });
@@ -2606,12 +2613,11 @@
             // --- Mock Data & Helper Functions ---
             const weeklySchedulesData = { 
                 "spring2024": [ 
-                    // Base schedule items - registered courses will be merged
-                    { day: "Sunday", icon: "fa-sun", classes: [] }, // Example: CSE3107 might be here from registered
-                    { day: "Monday", icon: "fa-cloud", classes: [] }, // Example: MAT3109
-                    { day: "Tuesday", icon: "fa-calendar-day", current: true, classes: [] }, // Example: CSE3205, CSE3111
-                    { day: "Wednesday", icon: "fa-cloud-sun", classes: [] }, // Example: CSE3205L
-                    { day: "Thursday", icon: "fa-cloud-rain", classes: [] } // Example: CSE3111L
+                    { day: "Sunday", icon: "fa-sun", classes: [] }, 
+                    { day: "Monday", icon: "fa-cloud", classes: [] }, 
+                    { day: "Tuesday", icon: "fa-calendar-day", current: true, classes: [] }, 
+                    { day: "Wednesday", icon: "fa-cloud-sun", classes: [] }, 
+                    { day: "Thursday", icon: "fa-cloud-rain", classes: [] } 
                 ],
                 "fall2023": [ { day: "Monday", icon: "fa-sun", classes: [ { code: "CSE2201", title: "OOP", time: "MW 08:30-10:00", room: "D-101", type: "lecture" } ] }, { day: "Wednesday", icon: "fa-calendar-day", classes: [ { code: "EEE2104", title: "Electronic Devices", time: "ST 10:00-11:30", room: "E-301", type: "lecture" } ] }, ],
                 "summer2023": [ { day: "Tuesday", icon: "fa-cloud", classes: [ { code: "ENG101", title: "English I", time: "TTh 11:00-12:30", room: "E-205", type: "lecture" } ] }, ]
@@ -2651,9 +2657,9 @@
                 { courseCode: "CSE3205", section: "A", time: "TTh 10:00-11:30", room: "D-502", faculty: "Dr. Rahman", enrolled: 35, capacity: 40 },
                 { courseCode: "CSE3205", section: "B", time: "MW 02:00-03:30", room: "D-503", faculty: "Dr. Eva", enrolled: 20, capacity: 40 },
                 { courseCode: "CSE3205", section: "C", time: "ST 08:30-10:00", room: "D-504", faculty: "Mr. Kabir", enrolled: 39, capacity: 40 },
-                { courseCode: "CSE3107", section: "B", time: "ST 12:00-01:30", room: "C-303", faculty: "Prof. Khan", enrolled: 38, capacity: 40 }, // Changed section to B to match initial registration
+                { courseCode: "CSE3107", section: "B", time: "ST 12:00-01:30", room: "C-303", faculty: "Prof. Khan", enrolled: 38, capacity: 40 }, 
                 { courseCode: "CSE3107", section: "C", time: "TTh 08:30-10:00", room: "C-304", faculty: "Mr. Alam", enrolled: 15, capacity: 35 },
-                { courseCode: "MAT3109", section: "C", time: "M 09:00-10:30", room: "B-102", faculty: "Dr. Hasan", enrolled: 25, capacity: 30 }, // Added for initial registration match
+                { courseCode: "MAT3109", section: "C", time: "M 09:00-10:30", room: "B-102", faculty: "Dr. Hasan", enrolled: 25, capacity: 30 }, 
                 { courseCode: "PHY1101", section: "D", time: "TTh 01:00-02:30", room: "A-101", faculty: "Prof. Alam", enrolled: 40, capacity: 40 },
                 { courseCode: "PHY1101", section: "E", time: "MW 10:00-11:30", room: "A-102", faculty: "Dr. Selim", enrolled: 25, capacity: 30 },
                 { courseCode: "CSE1203", section: "F", time: "ST 04:00-05:30", room: "B-201", faculty: "Ms. Nadia", enrolled: 30, capacity: 35 },
@@ -2691,7 +2697,6 @@
                 const currentSemesterCourses = studentRegisteredCourses.filter(c => c.semester === currentAcademicSemesterKey);
                 const totalCurrentCredits = currentSemesterCourses.reduce((sum, course) => sum + course.credit, 0);
                 
-                // Basic CGPA calculation (can be made more sophisticated)
                 let totalGradePoints = 0;
                 let totalCreditsForCgpa = 0;
                 studentRegisteredCourses.forEach(course => {
@@ -2704,7 +2709,6 @@
 
                 dashboardQuickStatsContainer.querySelector('[data-stat="cgpa"]').textContent = cgpa;
                 dashboardQuickStatsContainer.querySelector('[data-stat="credits"]').textContent = totalCurrentCredits.toFixed(1);
-                // Attendance and Due Fees are static in this mock
             }
             
             function loadDashboardData() {
@@ -2721,12 +2725,10 @@
 
             function generateScheduleHTML(scheduleDataForSemester, semesterKey) {
                 let baseSchedule = scheduleDataForSemester ? JSON.parse(JSON.stringify(scheduleDataForSemester)) : [];
-                
-                // Filter registered courses for the given semesterKey
                 let currentRegisteredForThisSemester = studentRegisteredCourses.filter(c => c.semester === semesterKey);
                 
                 currentRegisteredForThisSemester.forEach(regCourse => {
-                    const timeSlot = parseTimeSlot(regCourse.time); // Assuming parseTimeSlot is defined
+                    const timeSlot = parseTimeSlot(regCourse.time); 
                     if (timeSlot) {
                         timeSlot.days.forEach(dayIndex => {
                             const dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dayIndex];
@@ -2735,7 +2737,6 @@
                                 dayInfo = { day: dayName, icon: "fa-calendar-alt", classes: [] }; 
                                 baseSchedule.push(dayInfo);
                             }
-                            // Avoid duplicates if already in base by some other logic, or if manually added
                             if (!dayInfo.classes.some(c => c.code === regCourse.courseCode && c.time === regCourse.time)) {
                                 dayInfo.classes.push({ 
                                     code: regCourse.courseCode, 
@@ -2755,7 +2756,7 @@
                 
                 let html = '';
                 baseSchedule.forEach(dayInfo => {
-                    if (dayInfo.classes && dayInfo.classes.length > 0) { // Only render day if it has classes
+                    if (dayInfo.classes && dayInfo.classes.length > 0) { 
                         html += `<div class="schedule-day"><div class="day-header ${dayInfo.current ? 'current-day' : ''}"><i class="fas ${dayInfo.icon || 'fa-calendar-day'}"></i> ${dayInfo.day} ${dayInfo.current ? '(Today)' : ''}</div>`;
                         dayInfo.classes.sort((a,b) => { 
                             const slotA = parseTimeSlot(a.time);
@@ -2770,7 +2771,6 @@
             }
             
 
-            // --- Class Schedule Page ---
             const classScheduleSemesterSelect = document.getElementById('class-schedule-semester');
             const classScheduleContentArea = document.getElementById('class-schedule-content-area');
             const classScheduleSemesterTitle = document.getElementById('class-schedule-semester-title');
@@ -2781,7 +2781,6 @@
             }
             if (classScheduleSemesterSelect) { classScheduleSemesterSelect.addEventListener('change', function() { loadClassSchedule(this.value); }); }
 
-            // --- Registered Courses Section ---
             const regCoursesSemesterFilter = document.getElementById('registered-courses-semester-filter');
             const regCoursesTableContainer = document.getElementById('registered-courses-table-container');
             const regCoursesCreditSummaryEl = document.getElementById('registered-courses-credit-summary');
@@ -2809,13 +2808,12 @@
             }
             if(regCoursesSemesterFilter) { regCoursesSemesterFilter.addEventListener('change', function() { renderRegisteredCoursesTable(this.value); }); }
 
-            // --- Academic Results Section ---
             const resultsSemesterFilter = document.getElementById('results-semester-filter');
             const academicResultsContentArea = document.getElementById('academic-results-content-area');
 
             function renderAcademicResults(semesterKey) {
                 if (!academicResultsContentArea) return;
-                academicResultsContentArea.innerHTML = ''; // Clear previous content
+                academicResultsContentArea.innerHTML = ''; 
 
                 const coursesForSemester = studentRegisteredCourses.filter(c => c.semester === semesterKey);
                 if (coursesForSemester.length === 0) {
@@ -2829,7 +2827,7 @@
 
                 coursesForSemester.forEach(course => {
                     totalCreditsTaken += course.credit;
-                    if (course.grade !== "F" && course.grade !== "IP" && course.gradePoint !== null) { // IP = In Progress
+                    if (course.grade !== "F" && course.grade !== "IP" && course.gradePoint !== null) { 
                         totalCreditsEarned += course.credit;
                         totalGradePointsProduct += course.gradePoint * course.credit;
                     }
@@ -2837,10 +2835,9 @@
 
                 const semesterGPA = totalCreditsEarned > 0 ? (totalGradePointsProduct / totalCreditsEarned).toFixed(2) : "N/A";
                 
-                // For CGPA, consider all semesters up to and including the selected one
                 let cumulativeGradePointsProduct = 0;
                 let cumulativeCreditsEarned = 0;
-                const semesterOrder = ["summer2023", "fall2023", "spring2024"]; // Define chronological order
+                const semesterOrder = ["summer2023", "fall2023", "spring2024"]; 
                 const relevantSemesters = semesterOrder.slice(0, semesterOrder.indexOf(semesterKey) + 1);
 
                 studentRegisteredCourses.filter(c => relevantSemesters.includes(c.semester)).forEach(course => {
@@ -2885,7 +2882,6 @@
                 resultCardHTML += `</tbody></table></div></div>`;
                 academicResultsContentArea.innerHTML = resultCardHTML;
 
-                // Create containers for assessment breakdowns if they don't exist
                 coursesForSemester.forEach(course => {
                     const courseDetails = coursesData[course.courseCode];
                      if (courseDetails && courseDetails.assessments && courseDetails.assessments.length > 0) {
@@ -2894,13 +2890,35 @@
                             const breakdownDiv = document.createElement('div');
                             breakdownDiv.className = 'assessment-breakdown';
                             breakdownDiv.id = assessmentDivId;
+                            let assessmentRows = '';
+                            let totalScore = 0;
+                            let allScoresAreIP = true;
+                            courseDetails.assessments.forEach(asm => {
+                                let scoreDisplay = "N/A";
+                                if (course.grade === "IP" && semesterKey === currentAcademicSemesterKey) {
+                                    scoreDisplay = "IP";
+                                } else if (asm.score !== undefined && asm.score !== null && asm.score !== "IP") {
+                                    scoreDisplay = asm.score;
+                                    totalScore += parseFloat(asm.score) || 0;
+                                    allScoresAreIP = false;
+                                } else if (asm.score === "IP"){
+                                     scoreDisplay = "IP";
+                                }
+                                assessmentRows += `<tr><td>${asm.type}</td><td>${asm.weight}</td><td>${scoreDisplay}</td><td>${asm.max}</td></tr>`;
+                            });
+
+                            const totalRow = (course.grade !== "IP" || semesterKey !== currentAcademicSemesterKey) && !allScoresAreIP
+                                ? `<tr style="font-weight: bold;"><td>Total</td><td>100%</td><td>${totalScore.toFixed(1)}</td><td>100</td></tr>`
+                                : '';
+
+
                             breakdownDiv.innerHTML = `<h4>${courseDetails.title} (${course.courseCode}) Assessment - ${semesterNames[semesterKey] || semesterKey}</h4>
                                                     <div class="table-container">
                                                         <table>
                                                             <thead><tr><th>Assessment Type</th><th>Weight</th><th>Score</th><th>Max Score</th></tr></thead>
                                                             <tbody>
-                                                            ${courseDetails.assessments.map(asm => `<tr><td>${asm.type}</td><td>${asm.weight}</td><td>${(course.grade === "IP" && semesterKey === currentAcademicSemesterKey) ? "IP" : (asm.score || "N/A")}</td><td>${asm.max}</td></tr>`).join('')}
-                                                            ${ (course.grade !== "IP" || semesterKey !== currentAcademicSemesterKey) ? `<tr style="font-weight: bold;"><td>Total</td><td>100%</td><td>${courseDetails.assessments.reduce((sum, asm) => sum + (parseFloat(asm.score) || 0), 0)}</td><td>100</td></tr>` : ''}
+                                                            ${assessmentRows}
+                                                            ${totalRow}
                                                             </tbody>
                                                         </table>
                                                     </div>`;
@@ -2930,7 +2948,6 @@
 
             if(resultsSemesterFilter) { resultsSemesterFilter.addEventListener('change', function() { renderAcademicResults(this.value); }); }
             
-            // --- Financial Statements Page Selector ---
             const financeSemesterFilter = document.getElementById('finance-semester-filter');
             const financeContentArea = document.getElementById('financial-statements-content-area');
             if(financeSemesterFilter && financeContentArea){
@@ -2940,12 +2957,10 @@
                     if(targetContent) targetContent.style.display = 'block';
                     else financeContentArea.querySelector('.no-results')?.remove() || financeContentArea.insertAdjacentHTML('beforeend', '<p class="no-results">Financial data not found for this semester.</p>');
                 });
-                // Trigger change for initial load if needed, assuming first option is default
                 if(financeSemesterFilter.options.length > 0) financeSemesterFilter.dispatchEvent(new Event('change'));
             }
 
 
-            // --- Profile Change Request ---
             const requestChangeBtn = document.getElementById('request-change-btn'); 
             const cancelChangeBtn = document.getElementById('cancel-change-btn'); 
             const changeRequestForm = document.getElementById('change-request-form');
@@ -2954,7 +2969,6 @@
                 cancelChangeBtn.addEventListener('click', () => changeRequestForm.classList.remove('active'));
             }
 
-            // --- Notification Dropdown ---
             const notificationIcon = document.querySelector('.notification-icon'); 
             const notificationDropdown = document.querySelector('.notification-dropdown');
             if (notificationIcon && notificationDropdown) { 
@@ -2962,16 +2976,18 @@
                 document.addEventListener('click', (event) => { if (notificationDropdown.classList.contains('show') && !notificationIcon.contains(event.target) && !notificationDropdown.contains(event.target)) { notificationDropdown.classList.remove('show'); } });
             }
             
-            // --- Course Modal ---
             function populateModal(courseCode) { 
-                const courseInfo = studentRegisteredCourses.find(c => c.courseCode === courseCode && c.semester === currentAcademicSemesterKey) || coursesData[courseCode];
+                const courseInfo = studentRegisteredCourses.find(c => c.courseCode === courseCode && (c.semester === currentAcademicSemesterKey || c.semester === document.getElementById('registered-courses-semester-filter')?.value )) || 
+                                 tempSelectedCourses.find(c => c.courseCode === courseCode) || 
+                                 coursesData[courseCode];
+
                 const data = courseInfo || { title: "Details not found", credit:"", section:"", desc:"", time:"", room:"", facultyName:"", assessments:[] };
                 
                 courseModalTitleText.textContent = `${courseCode} - ${data.title}`;
                 courseModal.querySelector('.modal-course-code').value = courseCode;
                 courseModal.querySelector('.modal-course-title-input').value = data.title;
                 courseModal.querySelector('.modal-course-credit').value = data.credit || 'N/A';
-                courseModal.querySelector('.modal-course-section').value = data.section || 'N/A'; // Might not be in coursesData if not registered
+                courseModal.querySelector('.modal-course-section').value = data.section || 'N/A'; 
                 courseModal.querySelector('.modal-course-desc').value = data.desc || 'No description available.';
                 courseModal.querySelector('.modal-course-time').value = data.time || 'N/A';
                 courseModal.querySelector('.modal-course-room').value = data.room || 'N/A';
@@ -2979,7 +2995,7 @@
 
                 const assessmentTableBody = courseModal.querySelector('.modal-assessment-table-body');
                 assessmentTableBody.innerHTML = ''; 
-                const courseMasterData = coursesData[courseCode]; // Get master data for assessments
+                const courseMasterData = coursesData[courseCode]; 
                 if(courseMasterData && courseMasterData.assessments && courseMasterData.assessments.length > 0) {
                     courseMasterData.assessments.forEach(asm => { const row = assessmentTableBody.insertRow(); row.insertCell().textContent = asm.type; row.insertCell().textContent = asm.weight; row.insertCell().textContent = asm.score; row.insertCell().textContent = asm.max; });
                 } else { assessmentTableBody.innerHTML = '<tr><td colspan="4" style="text-align:center;">No assessment details available.</td></tr>'; }
@@ -3004,7 +3020,7 @@
                     modalTabs.forEach(t => t.classList.remove('active'));
                     this.classList.add('active');
                     courseModal.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-                    const targetTabContent = courseModal.querySelector(`#${tabId}-tab`) || courseModal.querySelector(`#${tabId}-breakdown-tab`) || courseModal.querySelector(`#results-breakdown-tab`); // Added results-breakdown-tab
+                    const targetTabContent = courseModal.querySelector(`#${tabId}-tab`) || courseModal.querySelector(`#${tabId}-breakdown-tab`) || courseModal.querySelector(`#results-breakdown-tab`); 
                     if (targetTabContent) targetTabContent.classList.add('active');
                 });
             });
@@ -3017,7 +3033,6 @@
                 });
             }
             
-            // --- Payment History ---
             const viewPaymentHistoryBtn = document.getElementById('view-payment-history'); 
             const paymentHistorySection = document.getElementById('payment-history');
             if (viewPaymentHistoryBtn && paymentHistorySection) { 
@@ -3028,7 +3043,6 @@
                 });
             }
 
-            // --- Exam Schedule Tabs ---
             const examTabs = document.querySelectorAll('#exam-schedule .exam-tab'); 
             const examContents = document.querySelectorAll('#exam-schedule .exam-content');
             examTabs.forEach(tab => { 
@@ -3043,13 +3057,11 @@
                 });
             });
 
-            // --- Registration Rules Helper Functions ---
             function parseDayShorthand(dayStr) {
                 const map = { 'S': 0, 'M': 1, 'T': 2, 'W': 3, 'Th': 4, 'F': 5, 'Sa': 6 };
-                if (dayStr === "ST") return [0, 2]; // Sunday, Tuesday
-                if (dayStr === "MW") return [1, 3]; // Monday, Wednesday
-                if (dayStr === "TTh") return [2, 4]; // Tuesday, Thursday
-                // Handle single days like "M", "T", "W" etc.
+                if (dayStr === "ST") return [0, 2]; 
+                if (dayStr === "MW") return [1, 3]; 
+                if (dayStr === "TTh") return [2, 4]; 
                 let days = [];
                 let currentDay = "";
                 for (let char of dayStr) {
@@ -3057,26 +3069,26 @@
                     if (map[currentDay] !== undefined) {
                         days.push(map[currentDay]);
                         currentDay = "";
-                    } else if (currentDay.length > 2) { // Prevent infinite loop for invalid strings
+                    } else if (currentDay.length > 2) { 
                         console.warn("Could not parse day shorthand:", dayStr);
-                        return null; // Or handle error appropriately
+                        return null; 
                     }
                 }
                 return days.length > 0 ? days : null;
             }
 
-            function parseTime(timeStr) { // e.g., "09:00" or "10:30"
+            function parseTime(timeStr) { 
                 const [hours, minutes] = timeStr.split(':').map(Number);
-                return hours * 60 + minutes; // Convert to minutes from midnight
+                return hours * 60 + minutes; 
             }
 
-            function parseTimeSlot(timeString) { // e.g., "MW 09:00-10:30"
+            function parseTimeSlot(timeString) { 
                 if (!timeString || typeof timeString !== 'string') return null;
                 const parts = timeString.split(' ');
                 if (parts.length < 2) return null;
 
                 const dayStr = parts[0];
-                const timeRange = parts.slice(1).join(' '); // Handle cases like "M 09:00 AM - 10:30 AM"
+                const timeRange = parts.slice(1).join(' '); 
 
                 const days = parseDayShorthand(dayStr);
                 if (!days) return null;
@@ -3094,18 +3106,12 @@
 
             function checkTimeOverlap(slot1, slot2) {
                 if (!slot1 || !slot2) return false;
-                // Check if any days overlap
                 const daysOverlap = slot1.days.some(day1 => slot2.days.includes(day1));
                 if (!daysOverlap) return false;
-
-                // Check if time intervals overlap
-                // Overlap if (StartA <= EndB) and (StartB <= EndA)
                 const timesOverlap = slot1.startTime < slot2.endTime && slot2.startTime < slot1.endTime;
                 return timesOverlap;
             }
 
-
-            // --- Course Registration and Drop Logic ---
             const registrationMainView = document.getElementById('registration-main-view');
             const offeredSectionsView = document.getElementById('offered-sections-view');
             const programCoursesListContainer = document.getElementById('program-courses-list');
@@ -3114,21 +3120,20 @@
             const backToAllCoursesBtn = document.getElementById('back-to-all-courses-btn');
             const programCourseSearchInput = document.getElementById('program-course-search-input');
             const sectionSearchInput = document.getElementById('section-search-input');
-            const confirmRegistrationBtn = document.getElementById('confirm-registration-btn');
+            
+            const selectedCoursesListEl = document.getElementById('selected-courses-list');
+            const finalConfirmButtonContainerEl = document.getElementById('final-confirm-button-container');
 
 
             function updateApplicationStatusCard() { 
                 const statusCardContainer = document.getElementById('application-status-card-content'); 
                 if (!statusCardContainer) return;
                 
-                // Clear previous dynamic statuses but keep the "no results" paragraph if it exists
                 statusCardContainer.querySelectorAll('.dynamic-status:not(.no-results)').forEach(el => el.remove());
                 const noResultsEl = statusCardContainer.querySelector('.no-results.dynamic-status');
 
-
                 let hasDynamicContent = false;
 
-                // Check current semester registration
                 const currentSemesterRegCourses = studentRegisteredCourses.filter(c => c.semester === currentAcademicSemesterKey);
                 if (currentSemesterRegCourses.length > 0) { 
                     const regItem = document.createElement('div');
@@ -3138,7 +3143,6 @@
                     hasDynamicContent = true;
                 }
 
-                // Check pending drop requests
                 courseDropRequests.filter(req => req.status === "Pending").forEach(req => {
                     const item = document.createElement('div');
                     item.className = 'status-badge status-item dynamic-status';
@@ -3148,7 +3152,6 @@
                 });
                 
                 if(noResultsEl) noResultsEl.style.display = hasDynamicContent ? 'none' : 'block';
-
             }
 
 
@@ -3176,129 +3179,145 @@
             function displayOfferedSections(sectionsToDisplay, forCourseCode) { 
                 if (!offeredSectionsListContainer) return;
                 const noResultsMsgEl = offeredSectionsListContainer.querySelector('.no-results');
-                Array.from(offeredSectionsListContainer.children).forEach(child => { if (child !== noResultsMsgEl) child.remove(); });
+                // Clear only course cards, not the no-results message itself
+                Array.from(offeredSectionsListContainer.querySelectorAll('.registration-course-card')).forEach(card => card.remove());
 
-                if (sectionsToDisplay.length === 0) { if(noResultsMsgEl) noResultsMsgEl.style.display = 'block'; return; }
+
+                if (sectionsToDisplay.length === 0) { 
+                    if(noResultsMsgEl) noResultsMsgEl.style.display = 'block'; 
+                    return; 
+                }
                 if(noResultsMsgEl) noResultsMsgEl.style.display = 'none';
 
                 sectionsToDisplay.forEach(sectionData => {
                     const card = document.createElement('div'); card.className = 'registration-course-card';
                     const isFull = sectionData.enrolled >= sectionData.capacity;
-                    // Check if ALREADY REGISTERED for THIS EXACT SECTION in studentRegisteredCourses
-                    const isRegisteredThisSection = studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === sectionData.courseCode && rc.section === sectionData.section);
-                    // Check if ALREADY REGISTERED for THIS COURSE (any section)
-                    const isRegisteredThisCourseAnySection = studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === sectionData.courseCode);
+                    
+                    // Check if already in tempSelectedCourses OR studentRegisteredCourses for this semester
+                    const isSelectedInTemp = tempSelectedCourses.some(tc => tc.courseCode === sectionData.courseCode && tc.section === sectionData.section);
+                    const isRegisteredThisSemester = studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === sectionData.courseCode && rc.section === sectionData.section);
+                    const isRegisteredAnySectionThisCourse = studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === sectionData.courseCode);
+                    const isSelectedAnySectionThisCourseInTemp = tempSelectedCourses.some(tc => tc.courseCode === sectionData.courseCode);
+
 
                     const newSlot = parseTimeSlot(sectionData.time); let hasConflict = false;
-                    if (newSlot && !isRegisteredThisSection) { // Only check conflict if not already registered for this exact section
+                    if (newSlot && !isSelectedInTemp && !isRegisteredThisSemester) { 
+                        // Check conflict with already registered courses
                         for (const regCourse of studentRegisteredCourses.filter(rc => rc.semester === currentAcademicSemesterKey)) { 
                             const existingSlot = parseTimeSlot(regCourse.time); 
-                            if (checkTimeOverlap(newSlot, existingSlot)) { 
-                                hasConflict = true; 
-                                card.classList.add('conflict'); 
-                                break; 
-                            } 
-                        } 
+                            if (checkTimeOverlap(newSlot, existingSlot)) { hasConflict = true; card.classList.add('conflict'); break; } 
+                        }
+                        // Check conflict with temp selected courses (if no conflict with registered ones yet)
+                        if(!hasConflict) {
+                            for (const tempCourse of tempSelectedCourses) {
+                                const tempSlot = parseTimeSlot(tempCourse.time);
+                                if (checkTimeOverlap(newSlot, tempSlot)) { hasConflict = true; card.classList.add('conflict'); break; }
+                            }
+                        }
                     }
 
                     let buttonHTML;
-                    if (isRegisteredThisSection) {
-                        buttonHTML = `<button class="btn btn-sm btn-danger remove-course-btn" data-course-code="${sectionData.courseCode}" data-section="${sectionData.section}"><i class="fas fa-times-circle"></i> Remove</button>`;
-                    } else if (isRegisteredThisCourseAnySection) {
-                        buttonHTML = `<button class="btn btn-sm btn-warning disabled" disabled title="Already registered for ${sectionData.courseCode} in another section."><i class="fas fa-exclamation-triangle"></i> Registered (Other Section)</button>`;
+                    if (isSelectedInTemp) {
+                         buttonHTML = `<button class="btn btn-sm btn-warning remove-temp-course-btn" data-course-code="${sectionData.courseCode}" data-section="${sectionData.section}"><i class="fas fa-minus-circle"></i> Selected (Click to Unselect)</button>`;
+                    } else if (isRegisteredThisSemester) { // If already officially registered
+                        buttonHTML = `<button class="btn btn-sm btn-outline-success disabled" disabled><i class="fas fa-check-circle"></i> Already Registered</button>`;
+                    } else if (isRegisteredAnySectionThisCourse || isSelectedAnySectionThisCourseInTemp) {
+                         buttonHTML = `<button class="btn btn-sm btn-secondary disabled" disabled title="Already selected/registered for ${sectionData.courseCode} in another section."><i class="fas fa-ban"></i> Course Added (Other Section)</button>`;
                     } else if (isFull) {
                         buttonHTML = `<button class="btn btn-sm btn-danger disabled" disabled><i class="fas fa-times-circle"></i> Full</button>`;
                     } else if (hasConflict) {
-                        buttonHTML = `<button class="btn btn-sm btn-danger disabled" disabled title="Time conflict with another registered course."><i class="fas fa-exclamation-triangle"></i> Time Conflict</button>`;
+                        buttonHTML = `<button class="btn btn-sm btn-danger disabled" disabled title="Time conflict with another selected/registered course."><i class="fas fa-exclamation-triangle"></i> Time Conflict</button>`;
                     } else {
-                        buttonHTML = `<button class="btn btn-sm btn-success add-course-btn" data-course-code="${sectionData.courseCode}" data-section="${sectionData.section}"><i class="fas fa-plus-circle"></i> Add Course</button>`;
+                        buttonHTML = `<button class="btn btn-sm btn-success add-course-btn" data-course-code="${sectionData.courseCode}" data-section="${sectionData.section}"><i class="fas fa-plus-circle"></i> Add to Selection</button>`;
                     }
                     card.innerHTML = `<h4>${sectionData.courseCode} - Section ${sectionData.section}</h4> <p><i class="fas fa-clock"></i> ${sectionData.time}</p> <p><i class="fas fa-map-marker-alt"></i> Room: ${sectionData.room}</p> <p><i class="fas fa-chalkboard-teacher"></i> Faculty: ${sectionData.faculty}</p> <p><i class="fas fa-users"></i> Enrollment: <span class="enrollment-status">${sectionData.enrolled}/${sectionData.capacity}</span></p> ${buttonHTML}`;
                     offeredSectionsListContainer.appendChild(card);
                 });
-                offeredSectionsListContainer.querySelectorAll('.add-course-btn').forEach(button => button.addEventListener('click', handleCourseRegistrationClick));
-                offeredSectionsListContainer.querySelectorAll('.remove-course-btn').forEach(button => button.addEventListener('click', function() {
-                     if (confirm(`Are you sure you want to remove ${this.dataset.courseCode} - Section ${this.dataset.section} from your current registration? This action will update your enrollment immediately.`)) {
-                        handleRemoveRegisteredCourse(this.dataset.courseCode, this.dataset.section);
-                     }
+                offeredSectionsListContainer.querySelectorAll('.add-course-btn').forEach(button => button.addEventListener('click', handleAddToTempSelectionClick));
+                offeredSectionsListContainer.querySelectorAll('.remove-temp-course-btn').forEach(button => button.addEventListener('click', function() {
+                     handleRemoveFromTempSelection(this.dataset.courseCode, this.dataset.section, true); // true to re-render offered sections
                 }));
-
             }
             
-            function handleCourseRegistrationClick(event) { 
+            function handleAddToTempSelectionClick(event) { 
                 const button = event.target.closest('.add-course-btn');
                 const courseCode = button.dataset.courseCode;
                 const section = button.dataset.section;
-                // Double check: ensure not already registered for this course (any section)
-                if (studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === courseCode)) { 
-                    showToast(`You have already registered for ${courseCode}. You cannot register for multiple sections of the same course.`, 'error'); 
-                    return; 
+
+                // Check if already selected in temp or registered in studentRegisteredCourses for THIS course
+                if (tempSelectedCourses.some(tc => tc.courseCode === courseCode) || studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === courseCode)) {
+                    showToast(`You have already selected or registered for ${courseCode}. You cannot add multiple sections of the same course.`, 'error');
+                    return;
                 }
 
                 const sectionData = allOfferedSectionsData.find(s => s.courseCode === courseCode && s.section === section);
                 const courseMasterData = coursesData[courseCode] || programCoursesData.find(pc => pc.code === courseCode);
                 
-                // Conflict check again just in case UI was slow to update
                 const newSlot = parseTimeSlot(sectionData.time);
                 if (newSlot) { 
-                    for (const regCourse of studentRegisteredCourses.filter(rc => rc.semester === currentAcademicSemesterKey)) { 
+                     for (const regCourse of studentRegisteredCourses.filter(rc => rc.semester === currentAcademicSemesterKey)) { 
                         const existingSlot = parseTimeSlot(regCourse.time); 
                         if (checkTimeOverlap(newSlot, existingSlot)) { 
-                            showToast(`Time conflict with ${regCourse.courseCode} (${regCourse.time}). Cannot register.`, 'error'); 
+                            showToast(`Time conflict with your registered course ${regCourse.courseCode} (${regCourse.time}). Cannot select.`, 'error'); 
                             return; 
                         } 
-                    } 
+                    }
+                    for (const tempCourse of tempSelectedCourses) {
+                        const tempSlot = parseTimeSlot(tempCourse.time);
+                        if (checkTimeOverlap(newSlot, tempSlot)) {
+                            showToast(`Time conflict with your selected course ${tempCourse.courseCode} (${tempCourse.time}). Cannot select.`, 'error');
+                            return;
+                        }
+                    }
                 }
 
                 if (sectionData && courseMasterData) { 
-                    studentRegisteredCourses.push({ 
-                        semester: currentAcademicSemesterKey, 
+                    tempSelectedCourses.push({ 
+                        semester: currentAcademicSemesterKey, // Will be finalized on confirm
                         courseCode: sectionData.courseCode, 
                         title: courseMasterData.title, 
-                        credit: courseMasterData.credits || courseMasterData.credit, // Ensure 'credits' field is used if from programCoursesData
+                        credit: courseMasterData.credits || courseMasterData.credit, 
                         section: sectionData.section, 
                         time: sectionData.time, 
                         room: sectionData.room, 
                         faculty: sectionData.faculty,
-                        grade: "IP", // Default for new registration
+                        grade: "IP", 
                         gradePoint: null
                     }); 
                     sectionData.enrolled++; 
                     
-                    // Force re-render of current offered sections to update button states
+                    renderSelectedCoursesForRegistration();
+                    // Re-render offered sections for THIS course to update button states
                     const currentCourseCodeForSectionsViewMatch = offeredSectionsTitle.textContent.match(/for (\w+)\s*-/);
                     const currentCourseCodeForSectionsView = currentCourseCodeForSectionsViewMatch ? currentCourseCodeForSectionsViewMatch[1] : null;
-
                     if (currentCourseCodeForSectionsView && currentCourseCodeForSectionsView === courseCode) {
                         showOfferedSectionsForCourse(courseCode); 
                     }
-                    showToast(`${courseCode} - Section ${section} added to your schedule. Click "Confirm Registration" to finalize and update all portal views.`, 'success'); 
-                } else { showToast(`Error adding course. Data not found.`, 'error'); }
+                    showToast(`${courseCode} - Section ${section} added to your selection.`, 'info'); 
+                } else { showToast(`Error selecting course. Data not found.`, 'error'); }
             }
 
-            function handleRemoveRegisteredCourse(courseCode, section) {
-                const courseIndex = studentRegisteredCourses.findIndex(rc => 
-                    rc.semester === currentAcademicSemesterKey && 
-                    rc.courseCode === courseCode && 
-                    rc.section === section
+            function handleRemoveFromTempSelection(courseCode, section, rerenderOffered = false) {
+                const courseIndex = tempSelectedCourses.findIndex(tc => 
+                    tc.courseCode === courseCode && tc.section === section
                 );
 
                 if (courseIndex > -1) {
-                    studentRegisteredCourses.splice(courseIndex, 1);
+                    tempSelectedCourses.splice(courseIndex, 1);
                     const sectionData = allOfferedSectionsData.find(s => s.courseCode === courseCode && s.section === section);
                     if (sectionData) {
-                        sectionData.enrolled = Math.max(0, sectionData.enrolled - 1); // Prevent negative enrollment
+                        sectionData.enrolled = Math.max(0, sectionData.enrolled - 1);
                     }
-
-                    // Re-render the current view of offered sections
-                    const currentCourseCodeForSectionsViewMatch = offeredSectionsTitle.textContent.match(/for (\w+)\s*-/);
-                    const currentCourseCodeForSectionsView = currentCourseCodeForSectionsViewMatch ? currentCourseCodeForSectionsViewMatch[1] : null;
-                    if (currentCourseCodeForSectionsView && currentCourseCodeForSectionsView === courseCode) {
-                        showOfferedSectionsForCourse(courseCode);
+                    
+                    renderSelectedCoursesForRegistration();
+                    if (rerenderOffered) {
+                        const currentCourseCodeForSectionsViewMatch = offeredSectionsTitle.textContent.match(/for (\w+)\s*-/);
+                        const currentCourseCodeForSectionsView = currentCourseCodeForSectionsViewMatch ? currentCourseCodeForSectionsViewMatch[1] : null;
+                         if (offeredSectionsView.style.display === 'block' && currentCourseCodeForSectionsView && currentCourseCodeForSectionsView === courseCode) {
+                            showOfferedSectionsForCourse(courseCode);
+                        }
                     }
-                    showToast(`${courseCode} - Section ${section} removed from your schedule. Click "Confirm Registration" to finalize and update all portal views.`, 'info');
-                } else {
-                    showToast(`Error removing course. Course not found in your registration.`, 'error');
+                    showToast(`${courseCode} - Section ${section} removed from your selection.`, 'info');
                 }
             }
 
@@ -3342,44 +3361,85 @@
                     displayProgramCourses(); 
                 });
             }
-             if (confirmRegistrationBtn) {
-                confirmRegistrationBtn.addEventListener('click', function() {
-                    if (confirm("Are you sure you want to confirm your current course selection? This will update your official registration and refresh all relevant portal views.")) {
-                        // 1. Update Application Status (implicitly done by studentRegisteredCourses content)
-                        updateApplicationStatusCard();
-                        
-                        // 2. Re-render Registered Courses Table for current semester
-                        if (document.getElementById('registered-courses').style.display === 'block') {
-                           renderRegisteredCoursesTable(currentAcademicSemesterKey);
-                        }
-                        
-                        // 3. Re-render Class Schedule (Page and Dashboard)
-                        if (document.getElementById('class-schedule-page').style.display === 'block') {
-                            loadClassSchedule(currentAcademicSemesterKey);
-                        }
-                        if (dashboardScheduleContainer) { // Update dashboard schedule
-                            dashboardScheduleContainer.innerHTML = generateScheduleHTML(weeklySchedulesData[currentAcademicSemesterKey], currentAcademicSemesterKey);
-                            attachModalListenersToScheduleItems(dashboardScheduleContainer);
-                        }
-                        
-                        // 4. Re-render Academic Results for current semester
-                        if (document.getElementById('academic-results').style.display === 'block') {
-                            renderAcademicResults(currentAcademicSemesterKey);
-                        }
+            
+            function renderSelectedCoursesForRegistration() {
+                if (!selectedCoursesListEl || !finalConfirmButtonContainerEl) return;
+                selectedCoursesListEl.innerHTML = ''; // Clear previous
+                finalConfirmButtonContainerEl.innerHTML = ''; // Clear button
 
-                        // 5. Update Dashboard Quick Stats
-                        updateDashboardQuickStats();
-                        
-                        showToast("Registration Confirmed and Portal Updated!", 'success');
-                        // Optionally, navigate away or reset registration view
-                        // showPage('#dashboard'); 
-                        // setActiveLink('#dashboard');
-                    }
+                if (tempSelectedCourses.length === 0) {
+                    selectedCoursesListEl.innerHTML = '<p class="no-results">No courses selected yet. Add courses from the list below.</p>';
+                    return;
+                }
+
+                tempSelectedCourses.forEach(course => {
+                    const card = document.createElement('div');
+                    card.className = 'registration-course-card'; // Can add a modifier class if needed
+                    card.innerHTML = `
+                        <h4>${course.courseCode} - ${course.title} (Section ${course.section})</h4>
+                        <p><i class="fas fa-clock"></i> ${course.time}</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Room: ${course.room}</p>
+                        <p><i class="fas fa-chalkboard-teacher"></i> Faculty: ${course.faculty}</p>
+                        <p><i class="fas fa-coins"></i> Credits: ${course.credit.toFixed(1)}</p>
+                        <button class="btn btn-sm btn-danger remove-temp-course-btn" data-course-code="${course.courseCode}" data-section="${course.section}" style="align-self: flex-end;"><i class="fas fa-times-circle"></i> Remove from Selection</button>
+                    `;
+                    selectedCoursesListEl.appendChild(card);
                 });
+
+                selectedCoursesListEl.querySelectorAll('.remove-temp-course-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        handleRemoveFromTempSelection(this.dataset.courseCode, this.dataset.section, true); // true to rerender offered section if visible
+                    });
+                });
+
+                // Add the confirm button
+                 const confirmBtn = document.createElement('button');
+                 confirmBtn.id = 'final-confirm-registration-btn';
+                 confirmBtn.className = 'btn btn-success';
+                 confirmBtn.innerHTML = '<i class="fas fa-check-circle"></i> Confirm Registration & Update Portal';
+                 confirmBtn.addEventListener('click', finalizeRegistration);
+                 finalConfirmButtonContainerEl.appendChild(confirmBtn);
+            }
+
+            function finalizeRegistration() {
+                if (tempSelectedCourses.length === 0) {
+                    showToast("No courses selected to confirm.", "warning");
+                    return;
+                }
+                if (confirm(`Are you sure you want to confirm these ${tempSelectedCourses.length} selected course(s)? This will update your official registration.`)) {
+                    // Merge tempSelectedCourses into studentRegisteredCourses
+                    // Ensure no duplicates by courseCode (assuming one section per course rule)
+                    tempSelectedCourses.forEach(tempCourse => {
+                        if (!studentRegisteredCourses.some(rc => rc.semester === currentAcademicSemesterKey && rc.courseCode === tempCourse.courseCode)) {
+                            studentRegisteredCourses.push({...tempCourse}); // Add a copy
+                        }
+                    });
+                    
+                    tempSelectedCourses = []; // Clear temp selections
+                    renderSelectedCoursesForRegistration(); // Update the selected courses display (will show empty)
+                    
+                    // Refresh all relevant portal sections
+                    updateApplicationStatusCard();
+                    if (document.getElementById('registered-courses').style.display === 'block' || document.querySelector('.sidebar-menu a[href="#registered-courses"].active')) {
+                       renderRegisteredCoursesTable(currentAcademicSemesterKey);
+                    }
+                    if (document.getElementById('class-schedule-page').style.display === 'block' || document.querySelector('.sidebar-menu a[href="#class-schedule-page"].active')) {
+                        loadClassSchedule(currentAcademicSemesterKey);
+                    }
+                    if (document.getElementById('academic-results').style.display === 'block' || document.querySelector('.sidebar-menu a[href="#academic-results"].active')) {
+                        renderAcademicResults(currentAcademicSemesterKey);
+                    }
+                    loadDashboardData(); // Always update dashboard
+                    
+                    showToast("Registration Finalized and Portal Updated!", 'success');
+                    // Optionally, navigate away or reset offered sections view
+                    if (offeredSectionsView.style.display === 'block') {
+                         showOfferedSectionsForCourse(offeredSectionsTitle.textContent.match(/for (\w+)\s*-/)?.[1]); // Re-render offered sections
+                    }
+                }
             }
 
 
-            // --- Course Drop Application Page ---
             const dropCourseListEl = document.getElementById('drop-course-list');
             const dropHistoryTableContainerEl = document.getElementById('drop-history-table-container');
             const dropAppCurrentSemesterNameEl = document.getElementById('drop-app-current-semester-name');
@@ -3436,7 +3496,6 @@
             }
 
 
-            // --- Academic Calendar ---
             const monthYearDisplay = document.getElementById('month-year-display');
             const calendarGrid = document.querySelector('#academic-calendar-page .calendar-grid');
             const prevMonthBtn = document.getElementById('prev-month-btn');
@@ -3447,13 +3506,46 @@
             const closeEventPopupBtn = document.getElementById('close-calendar-event-popup');
             let currentCalendarDate = new Date(); 
             
-            const academicCalendarEventsData = {
+             const academicCalendarEventsData = {
+                "2024-01-01": [{ title: "New Year's Day", type: "holiday", icon: "fas fa-calendar-day", description: "University Holiday." }],
+                "2024-01-15": [{ title: "Spring Semester Classes Start", type: "registration", icon: "fas fa-play-circle", description: "First day of classes for Spring 2024." }],
+                "2024-01-22": [{ title: "Last Day to Add/Drop Courses (Spring)", type: "deadline", icon: "fas fa-calendar-times", description: "Final day for course registration changes without penalty." }],
+                "2024-02-14": [{ title: "Falgun & Valentine's Day", type: "other", icon: "fas fa-heart", description: "Campus cultural events (regular classes)." }],
+                "2024-02-21": [{ title: "International Mother Language Day", type: "holiday", icon: "fas fa-monument", description: "University closed." }],
+                "2024-03-08": [{ title: "Quiz 1 Period Starts", type: "exam", icon: "fas fa-file-alt", description: "First quiz period for Spring 2024 courses." }],
+                "2024-03-17": [{ title: "Birthday of Bangabandhu Sheikh Mujibur Rahman", type: "holiday", icon: "fas fa-flag", description: "National Holiday." }],
                 "2024-03-25": [{ title: "Midterm Exams Start", type: "exam", icon: "fas fa-file-signature", description: "Midterm examinations for Spring 2024 begin today." }],
+                "2024-03-26": [{ title: "Independence Day", type: "holiday", icon: "fas fa-flag-checkered", description: "National Holiday." }],
+                "2024-04-01": [{ title: "Quiz 2 Period Starts", type: "exam", icon: "fas fa-file-alt", description: "Second quiz period for Spring 2024 courses." }],
                 "2024-04-05": [{ title: "Midterm Exams End", type: "exam", icon: "fas fa-file-signature", description: "Midterm examinations for Spring 2024 conclude." }],
-                "2024-04-10": [{ title: "Project Submission (CSE3205)", type: "deadline", icon: "fas fa-clipboard-check", description: "Deadline for CSE3205 project." }],
+                "2024-04-10": [{ title: "Project Submission (CSE3205)", type: "deadline", icon: "fas fa-clipboard-check", description: "Deadline for CSE3205 project." }, { title: "Eid-ul-Fitr Holiday Starts (Tentative)", type: "holiday", icon: "fas fa-moon", description: "University closed for Eid celebrations." }],
                 "2024-04-14": [{ title: "Pohela Boishakh", type: "holiday", icon: "fas fa-glass-cheers", description: "University closed for Pohela Boishakh." }],
+                "2024-04-20": [{ title: "Classes Resume after Eid", type: "other", icon: "fas fa-undo", description: "Classes resume after Eid & Pohela Boishakh holidays." }],
                 "2024-05-01": [{ title: "May Day", type: "holiday", icon: "fas fa-hard-hat", description: "University closed for May Day." }],
-                "2024-05-15": [{ title: "Final Exam Schedule Publish", type: "other", icon: "fas fa-calendar-alt", description: "Tentative date for final exam schedule publication."}]
+                "2024-05-10": [{ title: "Last Day of Classes (Spring)", type: "other", icon: "fas fa-stop-circle", description: "Final day of lectures for Spring 2024." }],
+                "2024-05-12": [{ title: "Study Break Starts", type: "other", icon: "fas fa-book-reader", description: "Study break before final exams." }],
+                "2024-05-15": [{ title: "Final Exam Schedule Publish", type: "other", icon: "fas fa-calendar-alt", description: "Tentative date for final exam schedule publication."}],
+                "2024-05-20": [{ title: "Final Exams Start (Spring)", type: "exam", icon: "fas fa-graduation-cap", description: "Final examinations for Spring 2024 begin." }],
+                "2024-06-02": [{ title: "Final Exams End (Spring)", type: "exam", icon: "fas fa-graduation-cap", description: "Final examinations for Spring 2024 conclude." }],
+                "2024-06-10": [{ title: "Grade Submission Deadline (Faculty)", type: "deadline", icon: "fas fa-user-check", description: "Faculty deadline to submit final grades." }],
+                "2024-06-15": [{ title: "Results Publication (Spring)", type: "other", icon: "fas fa-chart-bar", description: "Tentative date for Spring 2024 results." }],
+                "2024-06-17": [{ title: "Eid-ul-Adha Holiday (Tentative)", type: "holiday", icon: "fas fa-mosque", description: "University closed for Eid-ul-Adha." }],
+                "2024-06-20": [{ title: "Summer Semester Registration Starts", type: "registration", icon: "fas fa-edit", description: "Registration period for Summer 2024 opens." }],
+                "2024-07-01": [{ title: "Summer Semester Classes Start", type: "registration", icon: "fas fa-play-circle", description: "First day of classes for Summer 2024." }],
+                "2024-07-10": [{ title: "Last Day to Add/Drop Courses (Summer)", type: "deadline", icon: "fas fa-calendar-times", description: "Final day for Summer 2024 course changes." }],
+                "2024-08-15": [{ title: "National Mourning Day", type: "holiday", icon: "fas fa-flag", description: "University closed." }],
+                "2024-08-20": [{ title: "Summer Midterm Exams Start", type: "exam", icon: "fas fa-file-signature", description: "Midterm exams for Summer 2024." }],
+                "2024-09-05": [{ title: "Summer Midterm Exams End", type: "exam", icon: "fas fa-file-signature", description: "Summer midterm exams conclude." }],
+                "2024-09-16": [{ title: "Eid-e-Miladunnabi (Tentative)", type: "holiday", icon: "fas fa-moon", description: "University holiday." }],
+                "2024-09-25": [{ title: "Last Day of Classes (Summer)", type: "other", icon: "fas fa-stop-circle", description: "Final day of lectures for Summer 2024." }],
+                "2024-10-01": [{ title: "Summer Final Exams Start", type: "exam", icon: "fas fa-graduation-cap", description: "Final exams for Summer 2024 begin." }],
+                "2024-10-13": [{ title: "Durga Puja (Bijoya Dashami)", type: "holiday", icon: "fas fa-om", description: "University closed for Durga Puja." }],
+                "2024-10-15": [{ title: "Summer Final Exams End", type: "exam", icon: "fas fa-graduation-cap", description: "Summer final exams conclude." }],
+                "2024-10-25": [{ title: "Results Publication (Summer)", type: "other", icon: "fas fa-chart-bar", description: "Tentative date for Summer 2024 results." }],
+                "2024-10-28": [{ title: "Fall Semester Registration Starts", type: "registration", icon: "fas fa-edit", description: "Registration for Fall 2024 opens." }],
+                "2024-11-10": [{ title: "Fall Semester Classes Start", type: "registration", icon: "fas fa-play-circle", description: "First day of classes for Fall 2024." }],
+                "2024-12-16": [{ title: "Victory Day", type: "holiday", icon: "fas fa-flag-checkered", description: "National Holiday." }],
+                "2024-12-25": [{ title: "Christmas Day", type: "holiday", icon: "fas fa-church", description: "University Holiday." }]
             };
 
 
@@ -3462,11 +3554,10 @@
                 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                 if(monthYearDisplay) monthYearDisplay.textContent = `${monthNames[month]} ${year}`;
                 
-                // Clear previous day cells, keeping header
                 const dayCells = calendarGrid.querySelectorAll('.calendar-day-cell, .empty-day');
                 dayCells.forEach(cell => cell.remove());
 
-                const firstDayOfMonth = new Date(year, month, 1).getDay(); // 0=Sun, 1=Mon, ...
+                const firstDayOfMonth = new Date(year, month, 1).getDay(); 
                 const daysInMonth = new Date(year, month + 1, 0).getDate();
 
                 for (let i = 0; i < firstDayOfMonth; i++) {
@@ -3494,7 +3585,6 @@
                     calendarGrid.insertAdjacentHTML('beforeend', dayCellHTML);
                 }
                 
-                // Add event listeners for popups
                 calendarGrid.querySelectorAll('.calendar-event').forEach(eventEl => {
                     eventEl.addEventListener('click', function() {
                         if(eventPopupTitle) eventPopupTitle.textContent = this.dataset.eventTitle;
@@ -3511,7 +3601,6 @@
             
 
 
-             // Floating Action Button (Page Navigation) toggle for sidebar on small screens
             const pageNavButton = document.querySelector('.page-navigation');
             const sidebar = document.querySelector('.sidebar');
             if (pageNavButton && sidebar) {
@@ -3546,8 +3635,11 @@
             showPage(initialHash);
             setActiveLink(initialHash);
             
-            if (document.getElementById('registration-schedule')) { displayProgramCourses(); }
-            updateApplicationStatusCard(); // Initial call for application statuses
+            if (document.getElementById('registration-schedule')) { 
+                renderSelectedCoursesForRegistration(); // Ensure this is called
+                displayProgramCourses(); 
+            }
+            updateApplicationStatusCard(); 
 
         });
     </script>
