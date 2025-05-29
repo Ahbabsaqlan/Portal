@@ -67,16 +67,17 @@
         }
 
         .logo {
-            height: 50px; /* Slightly smaller logo */
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 24px; /* Adjusted font size */
-            font-weight: bold;
-            background: white;
-            color: var(--primary);
-            width: 50px; /* Slightly smaller logo */
-            border-radius: 50%;
+        }
+
+        .logo span {
+            color: var(--secondary);
+            margin-left: 5px;
         }
 
         .university-name {
@@ -2076,8 +2077,8 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <div class="logo">AIUB</div>
-                <div class="university-name">American International University-Bangladesh</div>
+                <a href="index.html" class="logo">AIUB<span>Portal</span></a>
+                <!-- <div class="university-name">American International University-Bangladesh</div> -->
             </div>
             <div class="nav-container">
                 <ul class="nav-menu">
@@ -2175,12 +2176,12 @@
                 <section class="welcome-section">
                     <div class="welcome-text">
                         <h1>Welcome back, Sarah Ahmed!</h1>
-                        <p>Bachelor of Science in Computer Science & Engineering | ID: 21-123456-1 | <span id="dashboard-current-semester-display">Spring 2023-2024</span></p>
+                        <p>Bachelor of Science in Computer Science & Engineering | ID: 22-48108-2 | <span id="dashboard-current-semester-display">Spring 2023-2024</span></p>
                     </div>
                     <div class="quick-stats" id="dashboard-quick-stats">
                         <div class="stat-card"><div class="value" data-stat="cgpa">3.89</div><div class="label">CGPA</div></div>
-                        <div class="stat-card"><div class="value" data-stat="attendance">92%</div><div class="label">Attendance</div></div>
-                        <div class="stat-card"><div class="value" data-stat="credits">15</div><div class="label">Credits (Current)</div></div>
+                        <div class="stat-card"><div class="value" data-stat="attendance">125</div><div class="label">Credits Completed</div></div>
+                        <div class="stat-card"><div class="value" data-stat="credits">15</div><div class="label">Credits Current</div></div>
                         <div class="stat-card"><div class="value" data-stat="due">0</div><div class="label">Due Fees</div></div>
                     </div>
                 </section>
